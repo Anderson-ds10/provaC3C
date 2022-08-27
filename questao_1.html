@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1 - Prova C3C</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(to right, #1DDBBE,#297CFE );
+        }
+        header{
+            text-align: center;
+            margin-top: 150px;
+            margin-bottom: 30px;
+        }
+        header p{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #caixa{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #l1,#l2,#l3{
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        #lado1,#lado2,#lado3{
+            padding: 15px;
+            width: 150px;
+            margin-bottom: 30px;
+            font-size: 22px;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+        #btn{
+            width: 500px;
+            font-size: 22px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(255, 187, 0);
+        }
+        #btn:hover {
+            transition: 1s;
+            font-size: 25px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descubra qual é seu triângulo</h1>
+        <p>Os <strong>triângulos</strong> podem ser classificados em 3 tipos quanto ao tamanho de seus lados, coloque seus valores e descubra-os:</p>
+    </header>
+    <main>
+        <div id="caixa">
+            <div>
+                <label id="l1" for="lado1">LADO 1</label>
+                <input type="number" name="lado1" id="lado1" min="1" max="10" required>
+            </div>
+            <div>
+                <label id="l2" for="lado2">LADO 2</label>
+                <input type="number" name="lado2" id="lado2" min="1" max="10" required>
+            </div>
+            <div>
+                <label id="l3" for="lado3">LADO 3</label>
+                <input type="number" name="lado3" id="lado3" min="1" max="10" required>
+            </div>
+            <div>
+                <input type="button" value="Checar" id="btn">
+            </div>
+        </div>
+    </main>
+
+    <script src="questao_1.js"></script>
+
+</body>
+</html>

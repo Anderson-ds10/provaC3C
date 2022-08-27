@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 - Prova C3C</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(to right, #1DDBBE,#297CFE );
+        }
+        h1{
+            text-align: center;
+            margin-top: 150px;
+        }
+        .la,.lb,.lc, .lx1,.lx2{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        #a,#b,#c,#x1,#x2{
+            padding: 10px;
+            font-size: 18px;
+            margin: 15px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        #caixa{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn{
+            width: 500px;
+            font-size: 22px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(255, 187, 0);
+        }
+        #btn:hover {
+            transition: 1s;
+            font-size: 25px;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formula de Bhaskara</h1>
+    </header>
+    <main>
+        <div id="caixa">
+            <div>
+                <label for="a" class="la">Entre com o valor de a:</label>
+                <input type="number" name="a" id="a" placeholder="a"/>
+            </div>
+            <div>
+                <label for="b" class="lb">Entre com o valor de b:</label>
+                <input type="number" name="b" id="b" placeholder="b"/>
+            </div>
+            <div>
+                <label for="c" class="lc">Entre com o valor de c:</label>
+                <input type="number" name="c" id="c" placeholder="c"/>
+            </div>
+            <div>
+                <label for="x1" class="lx1">x1</label>
+                <input disabled="disabled" name="x1" id="x1" />
+                <label for="x2" class="lx2">x2</label>
+                <input disabled="disabled" name="x2" id="x2" />
+            </div>
+            <div>
+                <input type="button" value="Calcular" id="btn">
+            </div>
+        </div>
+      </main>
+
+    <script src="questao_2.js"></script>
+</body>
+</html>
